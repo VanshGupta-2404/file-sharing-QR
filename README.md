@@ -19,8 +19,8 @@ Live Demo: file-sharing-qr-production.up.railway.app
 ---
 
 ## 📸 Demo
-![image](https://github.com/user-attachments/assets/5048dcaa-83b6-4b5b-9151-fc5e1532b595)
-![image](https://github.com/user-attachments/assets/0cfe6f50-4ead-4477-9874-7f9b723ca911)
+![image](https://github.com/user-attachments/assets/d1b522a4-9c7c-4aec-9d04-cd2714d83539)
+![image](https://github.com/user-attachments/assets/6fc8fbe2-96a3-49c6-9216-413fadd0dead)
 
 
 

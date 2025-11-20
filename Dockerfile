@@ -1,4 +1,15 @@
-FROM openjdk:17
+# ---- Build Stage ----
+FROM eclipse-temurin:17-jdk AS build
+WORKDIR /app
+
+COPY . .
+RUN ./mvnw -DskipTests clean package
+
+# ---- Run Stage ----
+FROM eclipse-temurin:17-jre
+WORKDIR /app
+
+COPY --from=build /app/target/*.jar app.jar
+
 EXPOSE 8080
-ADD target/ShareIt.jar ShareIt.jar
-ENTRYPOINT ["java" , "-jar","/ShareIt.jar"]
+ENTRYPOINT ["java", "-jar", "/app/app.jar"]
